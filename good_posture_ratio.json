@@ -1,0 +1,23 @@
+{
+  "good_posture_reference": {
+    "timestamp": "2025-11-20T11:39:43.952Z",
+    "measurements": {
+      "eyeShoulderParallelism": 121.1515804210635,
+      "eyeShoulderVerticalAlignment": 0.47799354791641235,
+      "shoulderBalance": 0.07936431964238484,
+      "spineAlignment": 0.0220737357934316,
+      "headCenterX": 0.48828190565109253,
+      "headCenterY": 0.38625314831733704,
+      "shouldderCenterX": 0.48874878883361816,
+      "shoulderCenterY": 0.8642466962337494
+    },
+    "status": "set"
+  },
+  "posture_history": [],
+  "metadata": {
+    "description": "Good posture ratio data - stores the reference measurements for comparing user posture",
+    "created": "2025-11-20T11:39:43.952Z",
+    "last_updated": "2025-11-20T11:39:43.952Z",
+    "total_checks": 0
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Sign - Webcam Capture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Vision Sign</h1>
+            <p>Webcam Capture with MediaPipe</p>
+        </div>
+
+        <div class="control-panel">
+            <button id="startBtn" class="btn btn-primary">Start Webcam</button>
+            <button id="stopBtn" class="btn btn-danger" disabled>Stop Webcam</button>
+        </div>
+
+        <div class="video-container">
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="canvas"></canvas>
+            <div id="postureScoreOverlay" class="posture-score-overlay" style="display: none;">
+                <div>Posture Score</div>
+                <div class="score-value" id="scoreValue">--</div>
+                <div id="scoreStatus">--</div>
+            </div>
+        </div>
+
+        <div class="status">
+            <p id="status">Ready to start</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js"></script>
+    <script src="posture_checker.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
